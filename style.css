@@ -10,7 +10,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
     border: 3px solid black;
 }
-
-p[style] {
+/* p[style] {
     color: red;
-}
+} */
