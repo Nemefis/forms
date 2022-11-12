@@ -1,0 +1,16 @@
+input[type="submit"] {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background: rgb(196,196,196);
+    background: linear-gradient(0deg, rgba(196,196,196,1) 0%, rgba(255,255,255,0.9486388305322129) 49%, rgba(196,196,196,1) 100%);
+    border: 3px solid #ececec;
+}
+input[type="submit"]:hover {
+    border: 3px solid black;
+}
+
+p[style] {
+    color: red;
+}
