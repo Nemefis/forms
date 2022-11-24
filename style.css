@@ -10,6 +10,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     border: 3px solid black;
 }
-/* p[style] {
-    color: red;
-} */
+input[type="number"] {
+    width: 347px;
+}
+.map, .youtube {
+    margin: 0 auto;
+    width: 1000px;
+}

@@ -10,13 +10,13 @@
 <body>
 <!-- FORM START -->
 <form action="#">
-    <p><b>Я изучаю верстку форм на HTML</b></p>
-    <p>Фамилия<br><input type="text" name="lastname" required placeholder="Введите фамилию" size="50"></p>  
-    <p>Имя<br><input type="text" name="firstname" required placeholder="Введите имя" size="50"></p>
-    <p>Электронная почта<br><input type="email" name="e-mail" required placeholder="test@test.ru" size="50"></p>
-    <p>Школа и класс<br><input type="text" name="school" required placeholder="Введите школу и класс" size="50"></p>
+    <p class="blue"><b>Я изучаю верстку форм на HTML</b></p>
+    <p>Фамилия<br><input type="text" name="lastname"   placeholder="Введите фамилию" size="50"></p>  
+    <p>Имя<br><input type="text" name="firstname"   placeholder="Введите имя" size="50"></p>
+    <p>Электронная почта<br><input type="email" name="e-mail"   placeholder="test@test.ru" size="50"></p>
+    <p>Школа и класс<br><input type="text" name="school"   placeholder="Введите школу и класс" size="50"></p>
     <p>Курс<br><input type="text" name="course" readonly value="САЙТОСТРОЕНИЕ HTML" size="50"></p>
-    <p>Группа<br><input type="text" name="group number" required placeholder="Введите номер группы" size="50"></p>
+    <p>Группа<br><input type="text" name="group number"   placeholder="Введите номер группы" size="50"></p>
     
     <!-- RadioButtons START -->
     <p style="margin: 0;">Группы</p>
@@ -25,13 +25,51 @@
     <p style="margin: 0;"><input type="radio" name="Выбранная группа" value="Группа 10">Группа 10 (15:00)</p>
     <p style="margin: 0;"><input type="radio" name="Выбранная группа" value="Группа 11">Группа 11 (16:30)</p>
     <!-- RadioButtons END -->
-
     <p>Мой любимый интернет-ресурс<br><input type="url" placeholder="Введите веб-сайт" name="favorite web site"></p>
     <p>Мой любимый цвет<br><input type="color" name="color"></p>
     <p>Дата рождения<br><input type="date" name="date birth"></p>
 
-    <p><input type="submit" value="Нажми на меня"></p>
+    <p>Количество оперативной памяти (RAM) в гигабайтах, с шагом 4, минимальное значение 4, максимальное 32.<br>
+        <input type="number" name="ram" min="4" max="32" step="4" value="4"></p>
+    <p>Количество памяти на жестком диске (ROM) в гигабайтах, с шагом 16, минимальное значение 4, максимальное 2048.<br>
+        <input type="number" name="rom" min="4" max="2048" step="16" value="4"></p>
+    <p>Количество ядер процессора, шаг 1, минимальное 1<br>
+        <input type="number" name="core" min="1" step="1" value="1"></p>
+
+    <p>Выберите номер школы<br>
+    <select name="school_number" id="school_number">
+        <option>75</option>
+        <option>20</option>
+        <option>9</option>
+        <option>17</option>
+    </select>
+    </p>
+    <p>Выберите номер класса<br>
+        <input type="number" name="grade" min="1" value="1" step="1" max="11">
+    </p>
+    <p>Выберите букву класса<br>
+        <input name="symbel" type="text" maxlength="1" size="51">
+    </p>
+
+    <textarea name="my_message" id="my_message" cols="30" rows="5" placeholder="Введите сообщение, максимальное количество символов 250" required maxlength="250"></textarea>
+
+    <p><input type="submit" value="Отправить"></p>
 </form>
 <!-- FORM END -->
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.718391028924!2d48.60814085153418!3d54.379624980111416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d3f1b8b2d409b%3A0x15d5407b8ea01f69!2sL&#39;vovskiy%20Bul&#39;var%2C%205%2C%20Ulyanovsk%2C%20Ulyanovskaya%20oblast&#39;%2C%20Russia%2C%20432063!5e0!3m2!1sen!2s!4v1668866486188!5m2!1sen!2s" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="map">
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/I6DyIZ9pqeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+    <!-- Встраиваение контента -->
+<!-- <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7257.235948354083!2d44.50966845654329!3d40.182915767065666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd8993f5e755%3A0x35b48c6c3823d151!2sBar%20The%20Bird%20Cage!5e0!3m2!1sen!2s!4v1668860612411!5m2!1sen!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="youtube">
+    <iframe width="1000" height="315" src="https://www.youtube.com/embed/oDuInQrN27A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
 </body>
 </html>
